@@ -1,0 +1,26 @@
+<div id="menu">
+  <h1><a href="/">Preview<strong>FM</strong></a></h1>
+  <a href="#" id="control"></a>
+</div>
+
+<audio id="preview" preload="none">
+  <source src="" type="audio/mp4" />
+  <p>You need to update to a newer browser such as Chrome, Firefox or Safari to use PreviewFM.</p>
+</audio>
+
+<div id="album-view">
+  <div id="album-info">
+    <img src="" id="artwork" />
+    <p id="artist"></p>
+    <p id="album-title"></p>
+    <a href="#" id="view-in-itunes">View in iTunes</a>
+  </div>
+
+  <ul id="playlist">
+  </ul>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  $(function() { player = new PreviewFM.AlbumPlayer(<%= @album.to_json %>) })
+</script>
+
