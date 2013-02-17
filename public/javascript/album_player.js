@@ -10,7 +10,6 @@ PreviewFM.AlbumPlayer = function(_album) {
     control    = $("#menu #control")
     album_view = new PreviewFM.AlbumView()
 
-    player[0].volume = 0
 
     start(album)
     bind()
@@ -22,6 +21,7 @@ PreviewFM.AlbumPlayer = function(_album) {
     songs = order_by_track_number(album.songs)
     album_view.set_album(album)
     album_view.render()
+    player[0].volume = 0
   }
 
   function order_by_track_number(songs) {

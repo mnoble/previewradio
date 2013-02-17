@@ -18,6 +18,8 @@ PreviewFM.AlbumView = function() {
   }
 
   function render() {
+    playlist.empty()
+
     $.each(songs, function(id, song) {
       playlist.append(song.render())
     })
@@ -33,9 +35,11 @@ PreviewFM.AlbumView = function() {
     active_song.draw()
   }
 
-  function set_playlist(songs) {
-    for (var i = 0; i < songs.length; i++)
-      add_song(songs[i])
+  function set_playlist(_songs) {
+    songs = {}
+
+    for (var i = 0; i < _songs.length; i++)
+      add_song(_songs[i])
   }
 
   function add_song(song) {
