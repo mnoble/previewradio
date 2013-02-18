@@ -74,7 +74,7 @@ PreviewFM.AlbumView = function() {
     set_artwork(album.artwork_url100)
     set_artist(album.artist)
     set_title(album.name)
-    set_link(album.collection_view_url)
+    set_link(album.view_url)
     set_playlist(album.songs)
   }
 

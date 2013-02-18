@@ -15,6 +15,8 @@ PreviewFM.AlbumPlayer = function(_album) {
     bind()
     fetch_next(album)
     update()
+    player[0].load()
+    player[0].play()
   }
 
   function start(album) {
