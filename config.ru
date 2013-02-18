@@ -1,2 +1,2 @@
-require File.dirname(__FILE__) + "/previewfm.rb"
-run PreviewFM::Application
+require File.dirname(__FILE__) + "/preview_radio.rb"
+run PreviewRadio::Application

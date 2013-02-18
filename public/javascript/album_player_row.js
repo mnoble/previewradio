@@ -1,4 +1,4 @@
-PreviewFM.AlbumPlayerRow = function(song) {
+PreviewRadio.AlbumPlayerRow = function(song) {
   var id       = null,
       title    = null,
       progress = null,

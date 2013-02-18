@@ -1,4 +1,4 @@
-PreviewFM.AlbumView = function() {
+PreviewRadio.AlbumView = function() {
   var view        = null,
       artwork     = null,
       artist      = null,
@@ -43,7 +43,7 @@ PreviewFM.AlbumView = function() {
   }
 
   function add_song(song) {
-    songs[song.id] = new PreviewFM.AlbumPlayerRow(song)
+    songs[song.id] = new PreviewRadio.AlbumPlayerRow(song)
   }
 
   function set_artwork(url) {

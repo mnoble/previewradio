@@ -4,7 +4,7 @@
 
 <audio id="preview" preload="none">
   <source src="" type="audio/mp4" />
-  <p>You need to update to a newer browser such as Chrome, Firefox or Safari to use PreviewFM.</p>
+  <p>You need to update to a newer browser such as Chrome, Firefox or Safari to use PreviewRadio.</p>
 </audio>
 
 <div id="album-view">
@@ -20,6 +20,6 @@
 </div>
 
 <script type="text/javascript" charset="utf-8">
-  $(function() { player = new PreviewFM.AlbumPlayer(<%= @album.to_json %>) })
+  $(function() { player = new PreviewRadio.AlbumPlayer(<%= @album.to_json %>) })
 </script>
 

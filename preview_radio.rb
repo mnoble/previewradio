@@ -4,7 +4,7 @@ require "net/http"
 require "json"
 require "mechanize"
 
-module PreviewFM
+module PreviewRadio
   class Application < Sinatra::Base
     get "/" do
       erb :index

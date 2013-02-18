@@ -1,4 +1,4 @@
-PreviewFM.AlbumPlayer = function(_album) {
+PreviewRadio.AlbumPlayer = function(_album) {
   var player     = null,
       control    = null,
       album_view = null,
@@ -8,8 +8,7 @@ PreviewFM.AlbumPlayer = function(_album) {
   function init(album) {
     player     = $("audio")
     control    = $("#menu #control")
-    album_view = new PreviewFM.AlbumView()
-
+    album_view = new PreviewRadio.AlbumView()
 
     start(album)
     bind()
