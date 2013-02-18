@@ -12,13 +12,13 @@ PreviewRadio.AlbumPlayer = function(_album) {
 
     start(album)
     bind()
-    fetch_next(album)
     update()
     player[0].load()
     player[0].play()
   }
 
   function start(album) {
+    fetch_next(album)
     songs = order_by_track_number(album.songs)
     album_view.set_album(album)
     album_view.render()
