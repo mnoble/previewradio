@@ -1,13 +1,17 @@
 <div id="search">
   <h1>Preview<strong>Radio</strong></h1>
-  <p class="tagline">Discover albums like:</p>
+  <% if @albums.empty? %>
+    <p class="tagline">No albums discovered ya jerk! Probably a typo.</p>
+  <% else %>
+    <p class="tagline">Discover albums like:</p>
 
-  <ul id="results">
-    <% @albums.each do |album| %>
-      <li>
-        <a href="/previews/<%= album.id %>"><%= album.name %></a>
-        <span><%= album.artist %></span>
-      </li>
-    <% end %>
-  </ul>
+    <ul id="results">
+      <% @albums.each do |album| %>
+        <li>
+          <a href="/previews/<%= album.id %>"><%= album.name %></a>
+          <span><%= album.artist %></span>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
 </div>
